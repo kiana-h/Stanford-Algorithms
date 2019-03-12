@@ -11,6 +11,16 @@ import math
 
 
 def karatsuba(a,b):
+    
+    """
+    this function calculates the product of two numbers based on this equation:
+        xy = 10^n(ac) + 10^n/2((a+b)(c+d)-ac-bd) + bd
+    where a and c are the first half of the given numbers, b and d are the second half.
+    n is the number of digits.
+    for example, if numbers are 1234 and 5678:
+        a = 12 , b = 34 
+        c = 56 , d = 78
+    """
    
     #base case: if there's a single-digit number, multiply them
     if a<10 or b<10:
