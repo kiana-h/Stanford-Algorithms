@@ -32,11 +32,15 @@ def inversion_count(a):
          
       merged += a1[i:]
       merged += a2[j:]
-
-
   
   return count,merged
 
 
 
-print(inversion_count([6,1,2,3,4,5]))
+  
+with open('IntegerArray.txt') as f:
+    number_list = [int(x) for x in f]
+
+print(len(number_list)," numbers loaded!")
+print(inversion_count(number_list)[0], "inversions!")
+
