@@ -41,6 +41,6 @@ def inversion_count(a):
 with open('IntegerArray.txt') as f:
     number_list = [int(x) for x in f]
 
-print(len(number_list)," numbers loaded!")
+print(len(number_list),"numbers loaded!")
 print(inversion_count(number_list)[0], "inversions!")
 
